@@ -155,7 +155,6 @@ a:visited{
     font-weight: bold;
     margin: 3rem 1rem 2rem 8rem;
     font-family: 'Open Sans Condensed', sans-serif;
-    color: #284B63;
 }
 
 /* FORMS */
@@ -182,7 +181,7 @@ label, input, textarea{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-column-gap: 2rem;
-    padding: 5rem;
+    padding: 3.5rem;
     background: linear-gradient(to bottom, #f9f9f9, #5c5c5c);
 }
 
@@ -268,6 +267,10 @@ footer, #link{
         font-weight: bold;
         margin-top: 2rem;
     }
+    .hijo1, .hijo2{
+        font-size: 1.4rem;
+        margin: 0rem;
+    }
 }
 
 @media only screen and (max-width:768px){
@@ -284,6 +287,9 @@ footer, #link{
         font-size: 2rem;
     }
     .preguntas div p{
+        font-size: 1.2rem;
+    }
+    .hijo1, .hijo2{
         font-size: 1.2rem;
     }
 }
