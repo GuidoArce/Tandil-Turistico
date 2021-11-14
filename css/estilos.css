@@ -1,0 +1,289 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../multimedia/rockywall.png);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3{
+    color: #284B63;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2{
+    font-size: 4.5rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: #284B63;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #284B63;
+}
+
+.breadNav{
+    margin: 2rem 0rem 0rem 2rem;
+    font-size: 2rem;
+    color: #284B63;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* NAV EN HEADER */
+
+.backImg{
+    background-image: url(../multimedia/rockywall.png);
+}
+.itemList{
+    transition: 0.3s;
+    color: #284B63;
+    font-family: 'Open Sans Condensed', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.itemList:hover{
+    transform: scale(1.2);
+    border-bottom: #284B63 solid 1px;
+}
+
+
+/* NAV ENTRE CIRCUITOS */
+
+.circuitos{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    align-items: center;
+    justify-items: center;
+    list-style-type: none;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-bottom: 20rem;
+}
+
+.info{
+    width: 300px;
+    height: 100px;
+    padding: 3rem 7rem 0rem 2rem;
+    display: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navimg:hover .info{
+    display: block;
+    position: absolute;
+}
+
+.navimg:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 4px 40px 0 black;
+}
+
+.navimg{
+    list-style-type: none;
+    border: solid black;
+    transition: 0.2s;
+}
+
+.tituloCircuito{
+    padding-top: 5rem;
+    font-size: 5rem;
+}
+
+/* MAPAS */
+
+.mapa{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 3rem;
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.tituloCircuito{
+    text-align: center;
+}
+
+.subtitulo__info{
+    margin: 2rem;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.listaMapa__visita{
+    font-size: 3.5rem;
+}
+
+.listaMapa__list{
+    font-size: 1.8rem;
+}
+
+
+/* PREGUNTAS FRECUENTES */
+
+.preguntas div p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.buton__preg{
+    color: #284B63;
+    font-weight: bold;
+}
+.question{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem 1rem 2rem 8rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #284B63;
+}
+
+/* FORMS */
+
+.formulario{
+    margin-bottom: 5rem;
+}
+
+label, input, textarea{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.formInfo{
+    padding-bottom: 2rem;
+}
+
+.pregunta{
+    padding-bottom: 4rem;
+}
+
+/* FOOTER */
+
+.pie{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 2rem;
+    padding: 5rem;
+    background: linear-gradient(to bottom, #f9f9f9, #5c5c5c);
+}
+
+footer, #link{
+    color: #353535;
+}
+
+.hijo1{
+    justify-self: end;
+}
+
+.hijo2{
+    justify-self: start;
+}
+
+/* ERROR 404 */
+
+.e{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20rem;
+    
+}
+
+.e img{
+    padding-right: 6rem;
+}
+
+.error{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4rem;
+}
+
+.back{
+    transition: 0.3s;
+    color: #284B63;
+    font-family: 'Open Sans Condensed', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.back:hover{
+    transform: scale(1.2);
+    border-bottom: #284B63 solid 1px;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 1024px){
+    .mapa{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-column-gap: 3rem;
+        align-items: center;
+        margin: 1rem;
+    }
+    .listaMapa{
+        margin-top: 2rem;
+    }
+    .tituloCircuito{
+        margin-top: 0rem;
+    }
+    .subtitulo__info{
+        padding: 1rem 4rem;
+    }
+    .visita{
+        padding-top: 3rem;
+    }
+    .circuitos{
+        grid-template-columns: repeat(2, 4fr);
+        grid-template-columns: repeat(2, 4fr);
+        grid-row-gap: 4rem;
+        align-items: center;
+    }
+    .navimg:hover .info{
+        display: none;
+    }
+    .question{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    .circuitos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 4fr);
+        padding: 4rem 0rem 1rem 0rem;
+    }
+    .navimg:hover .info{
+        display: none;
+    }
+    .question{
+        font-size: 2rem;
+    }
+    .preguntas div p{
+        font-size: 1.2rem;
+    }
+}
