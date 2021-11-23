@@ -291,7 +291,7 @@ footer, #link{
         margin: 1rem;
         padding: 1rem;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 
@@ -313,15 +313,5 @@ footer, #link{
     }
     .hijo1, .hijo2{
         font-size: 1.2rem;
-    }
-    .numEmergencia{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-row-gap: 1rem;
-        margin: 1rem;
-        padding: 1rem;
-        text-align: center;
-        font-size: 2rem;
     }
 }
