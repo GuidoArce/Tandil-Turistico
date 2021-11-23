@@ -246,6 +246,11 @@ footer, #link{
 /* MEDIA */
 
 @media only screen and (max-width: 1024px){
+
+    .itemList:hover{
+        transform: none;
+        border-bottom: none;
+    }
     .mapa{
         display: grid;
         grid-template-columns: repeat(1, 2fr);
@@ -270,6 +275,10 @@ footer, #link{
         grid-template-columns: repeat(2, 4fr);
         grid-row-gap: 4rem;
         align-items: center;
+    }
+    .navimg:hover{
+        transform: none;
+        box-shadow: none;
     }
     .navimg:hover .info{
         display: none;
